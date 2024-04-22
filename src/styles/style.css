@@ -1,0 +1,36 @@
+.controle-buttons {
+    background-color: #007eff7e;
+}
+
+.win {
+    background-color: #8b5cf6d4;
+}
+
+.over {
+    background-color: #f65c5cbe;
+}
+
+.Game {
+    max-width: 900px;
+}
+
+.Game_Cards_Card {
+    width: 150px;
+    height: 150px;
+}
+
+.Game_Cards_Card {
+    backface-visibility: hidden;
+}
+
+.Game_Cards_Card_Back {
+    transform: rotateY(180deg);
+}
+
+.Game_Cards_Card_Front::before {
+    content: "?";
+    position: absolute;
+    font-weight: bold;
+    font-size: 100px;
+    color: white;
+}

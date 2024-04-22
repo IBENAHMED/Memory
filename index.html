@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="discription"
+      content="If you want a strong mind, play Memory Blocks game now"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Game, Player, Cards" />
+    <meta name="author" content="Reda IBENAHMED" />
+    <title>Memory Blocks Game</title>
+    <link rel="icon" type="image/png" href="./public/favicon_ico.png" />
+
+    <!-- Link Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+
+    <!-- Link File Tailwind CSS -->
+    <link rel="stylesheet" href="./dist/css/style.css" />
+
+    <!-- Link File styles CSS -->
+    <link rel="stylesheet" href="./src/styles/style.css" />
+  </head>
+
+  <body>
+    <div class="h-screen">
+      <div
+        class="controle-buttons fixed z-20 flex h-full w-full items-center justify-center"
+      >
+        <span
+          class="start w-1/4 cursor-pointer rounded-full bg-green-500 px-5 py-2 text-center font-semibold text-white shadow-md hover:bg-green-700 focus:bg-green-400 focus:outline-none focus:ring focus:ring-opacity-75 md:text-2xl"
+        >
+          Start Game
+        </span>
+      </div>
+      <div class="win hidden">
+        <div
+          class="win absolute left-1/2 top-1/2 z-10 flex h-36 w-full -translate-x-1/2 -translate-y-1/2 items-center justify-center"
+        >
+          <span
+            class="block text-7xl font-bold tracking-wider text-white text-opacity-100"
+            >WIN</span
+          >
+        </div>
+      </div>
+      <div class="over hidden">
+        <div
+          class="over absolute left-1/2 top-1/2 z-10 flex h-1/2 w-full -translate-x-1/2 -translate-y-1/2 items-center justify-center"
+        >
+          <span
+            class="block text-7xl font-bold tracking-wider text-white text-opacity-100"
+            >G.OVER</span
+          >
+        </div>
+      </div>
+      <div class="Game mx-auto p-5">
+        <div class="Game_Player">
+          <div
+            class="Game_Player_Header flex justify-between rounded border border-blue-600 bg-slate-300 px-3 py-2"
+          >
+            <div class="Game_Player_Header_Names">
+              <span
+                >Hey :
+                <span class="Game_Player_Header_Names_Name"
+                  >Your Full Name</span
+                ></span
+              >
+            </div>
+            <div class="Game_Player_Header_Wrongs">
+              <span
+                >Wrong Tries :
+                <span class="Game_Player_Header_Wrongs_Wrong">0</span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="Game_Cards mt-5 flex flex-wrap justify-center gap-5">
+          <div class="Game_Cards_Card relative flex cursor-pointer">
+            <div class="Game_Cards_Card_Back">
+              <img
+                class="rounded"
+                data="237"
+                src="https://picsum.photos/id/237/150/150"
+                alt="image"
+              />
+            </div>
+            <div
+              class="Game_Cards_Card_Front absolute flex h-full w-full items-center justify-center rounded border border-blue-600 bg-slate-900"
+            ></div>
+          </div>
+          <div class="Game_Cards_Card relative flex cursor-pointer">
+            <div class="Game_Cards_Card_Back">
+              <img
+                class="rounded"
+                data="237"
+                src="https://picsum.photos/id/237/150/150"
+                alt="image"
+              />
+            </div>
+            <div
+              class="Game_Cards_Card_Front absolute flex h-full w-full items-center justify-center rounded border border-blue-600 bg-slate-900"
+            ></div>
+          </div>
+          <div class="Game_Cards_Card relative flex cursor-pointer">
+            <div class="Game_Cards_Card_Back">
+              <img
+                class="rounded"
+                data="50"
+                src="https://picsum.photos/id/50/150/150"
+                alt="image"
+              />
+            </div>
+            <div
+              class="Game_Cards_Card_Front absolute flex h-full w-full items-center justify-center rounded border border-blue-600 bg-slate-900"
+            ></div>
+          </div>
+          <div class="Game_Cards_Card relative flex cursor-pointer">
+            <div class="Game_Cards_Card_Back">
+              <img
+                class="rounded"
+                data="50"
+                src="https://picsum.photos/id/50/150/150"
+                alt="image"
+              />
+            </div>
+            <div
+              class="Game_Cards_Card_Front absolute flex h-full w-full items-center justify-center rounded border border-blue-600 bg-slate-900"
+            ></div>
+          </div>
+          <div class="Game_Cards_Card relative flex cursor-pointer">
+            <div class="Game_Cards_Card_Back">
+              <img
+                class="rounded"
+                data="53"
+                src="https://picsum.photos/id/53/150/150"
+                alt="image"
+              />
+            </div>
+            <div
+              class="Game_Cards_Card_Front absolute flex h-full w-full items-center justify-center rounded border border-blue-600 bg-slate-900"
+            ></div>
+          </div>
+          <div class="Game_Cards_Card relative flex cursor-pointer">
+            <div class="Game_Cards_Card_Back">
+              <img
+                class="rounded"
+                data="53"
+                src="https://picsum.photos/id/53/150/150"
+                alt="image"
+              />
+            </div>
+            <div
+              class="Game_Cards_Card_Front absolute flex h-full w-full items-center justify-center rounded border border-blue-600 bg-slate-900"
+            ></div>
+          </div>
+          <div class="Game_Cards_Card relative flex cursor-pointer">
+            <div class="Game_Cards_Card_Back">
+              <img
+                class="rounded"
+                data="70"
+                src="https://picsum.photos/id/70/150/150"
+                alt="image"
+              />
+            </div>
+            <div
+              class="Game_Cards_Card_Front absolute flex h-full w-full items-center justify-center rounded border border-blue-600 bg-slate-900"
+            ></div>
+          </div>
+          <div class="Game_Cards_Card relative flex cursor-pointer">
+            <div class="Game_Cards_Card_Back">
+              <img
+                class="rounded"
+                data="70"
+                src="https://picsum.photos/id/70/150/150"
+                alt="image"
+              />
+            </div>
+            <div
+              class="Game_Cards_Card_Front absolute flex h-full w-full items-center justify-center rounded border border-blue-600 bg-slate-900"
+            ></div>
+          </div>
+          <div class="Game_Cards_Card relative flex cursor-pointer">
+            <div class="Game_Cards_Card_Back">
+              <img
+                class="rounded"
+                data="80"
+                src="https://picsum.photos/id/80/150/150"
+                alt="image"
+              />
+            </div>
+            <div
+              class="Game_Cards_Card_Front absolute flex h-full w-full items-center justify-center rounded border border-blue-600 bg-slate-900"
+            ></div>
+          </div>
+          <div class="Game_Cards_Card relative flex cursor-pointer">
+            <div class="Game_Cards_Card_Back">
+              <img
+                class="rounded"
+                data="80"
+                src="https://picsum.photos/id/80/150/150"
+                alt="image"
+              />
+            </div>
+            <div
+              class="Game_Cards_Card_Front absolute flex h-full w-full items-center justify-center rounded border border-blue-600 bg-slate-900"
+            ></div>
+          </div>
+          <div class="Game_Cards_Card relative flex cursor-pointer">
+            <div class="Game_Cards_Card_Back">
+              <img
+                class="rounded"
+                data="90"
+                src="https://picsum.photos/id/90/150/150"
+                alt="image"
+              />
+            </div>
+            <div
+              class="Game_Cards_Card_Front absolute flex h-full w-full items-center justify-center rounded border border-blue-600 bg-slate-900"
+            ></div>
+          </div>
+          <div class="Game_Cards_Card relative flex cursor-pointer">
+            <div class="Game_Cards_Card_Back">
+              <img
+                class="rounded"
+                data="90"
+                src="https://picsum.photos/id/90/150/150"
+                alt="image"
+              />
+            </div>
+            <div
+              class="Game_Cards_Card_Front absolute flex h-full w-full items-center justify-center rounded border border-blue-600 bg-slate-900"
+            ></div>
+          </div>
+          <div class="Game_Cards_Card relative flex cursor-pointer">
+            <div class="Game_Cards_Card_Back">
+              <img
+                class="rounded"
+                data="101"
+                src="https://picsum.photos/id/101/150/150"
+                alt="image"
+              />
+            </div>
+            <div
+              class="Game_Cards_Card_Front absolute flex h-full w-full items-center justify-center rounded border border-blue-600 bg-slate-900"
+            ></div>
+          </div>
+          <div class="Game_Cards_Card relative flex cursor-pointer">
+            <div class="Game_Cards_Card_Back">
+              <img
+                class="rounded"
+                data="101"
+                src="https://picsum.photos/id/101/150/150"
+                alt="image"
+              />
+            </div>
+            <div
+              class="Game_Cards_Card_Front absolute flex h-full w-full items-center justify-center rounded border border-blue-600 bg-slate-900"
+            ></div>
+          </div>
+        </div>
+        <div class="mt-3 flex flex-wrap items-center justify-center gap-5">
+          <button
+            class="play rounded-full bg-violet-500 px-5 py-2 font-semibold text-white shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75"
+          >
+            Play music
+          </button>
+
+          <button
+            class="stop rounded-full bg-red-500 px-5 py-2 font-semibold text-white shadow-md hover:bg-red-700 focus:bg-red-400 focus:outline-none focus:ring focus:ring-opacity-75"
+          >
+            Psause music
+          </button>
+          <button
+            class="replay rounded-full bg-green-500 px-5 py-2 font-semibold text-white shadow-md hover:bg-green-700 focus:bg-green-400 focus:outline-none focus:ring focus:ring-opacity-75"
+          >
+            Replay Game
+          </button>
+          <span
+            class="flex w-1/2 justify-center rounded-full bg-orange-500 px-5 py-2 text-center font-semibold text-white shadow-md hover:bg-orange-700 focus:bg-orange-400 focus:outline-none focus:ring focus:ring-opacity-75"
+          >
+            <span class="time">00:00</span>
+          </span>
+        </div>
+      </div>
+      <div class="audio">
+        <audio class="audio" src="./src/assets/audio/audio6.mp3"></audio>
+        <audio class="win-audio" src="./src/assets/audio/audio2.mp3"></audio>
+      </div>
+    </div>
+
+    <!-- Link Font Awesome -->
+    <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+
+    <!-- Link File JavaScript -->
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
